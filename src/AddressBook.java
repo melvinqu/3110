@@ -10,7 +10,7 @@ public class AddressBook {
         BuddyInfo buddy = new BuddyInfo("tom","carleton","613");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        addressBook.removeBuddy(0);
     }
 
     public void addBuddy(BuddyInfo buddy)
