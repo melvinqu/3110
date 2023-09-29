@@ -13,12 +13,18 @@ public class AddressBook {
         addressBook.removeBuddy(buddy);
     }
 
-    public void addBuddy(BuddyInfo buddy){
-        buddyInfoArrayList.add(buddy);
+    public void addBuddy(BuddyInfo buddy)
+    {
+        if (buddy!=null){
+            buddyInfoArrayList.add(buddy);
+        }
     }
 
-    public void removeBuddy(BuddyInfo buddy){
-        buddyInfoArrayList.remove(buddy);
+    public BuddyInfo removeBuddy(int index)
+    {
+        if(index >= 0 && index<buddyInfoArrayList.size()){
+            return buddyInfoArrayList.remove(index);
+        }
+        return null;
     }
-
 }
